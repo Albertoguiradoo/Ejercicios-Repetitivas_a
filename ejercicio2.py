@@ -9,14 +9,23 @@ que había generado
 '''
 import random
 
+intentos = 1
 num = random.randint(1,100)
 print (num)
 num1 = 0
 num1 = int(input("Dime le número haber si lo adivinas: \n"))
 
-while num1 != num:
-    print("número no adivinado. Por favor intentelo de nuevo.")
+while (num1 != num and intentos != 10):
+    if num1> num:
+        print("El número que tienes que adivinar es menor. Por favor intentelo de nuevo.")
+    else:
+        print("El número que tienes que adivinar es mayor. Por favor intentelo de nuevo.")
     num1 = int(input("Dime le número haber si lo adivinas: \n"))
+    intentos += 1
+   
 
-print(f"has adivinado el número secreto que era: {num}")
+if  (intentos == 10):
+    print(f"El número secreto era: {num}")
+else:
+    print(f"has adivinado el número secreto que era {num} en {intentos} intento")
 
