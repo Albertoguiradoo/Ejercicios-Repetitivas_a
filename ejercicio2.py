@@ -27,5 +27,5 @@ while (num1 != num and intentos != 10):
 if  (intentos == 10):
     print(f"El número secreto era: {num}")
 else:
-    print(f"has adivinado el número secreto que era {num} en {intentos} intento")
+    print(f"has adivinado el número secreto que era {num} en {intentos} intentos")
 
