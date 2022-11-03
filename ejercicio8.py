@@ -8,21 +8,16 @@ Cuando termine el programa dará las siguientes informaciones:
 -Cuantos números están fuera del intervalo.
 -He informa si hemos introducido algún número igual a los límites del intervalo.'''
 
-intervalo1_1 = 0
-intervalo1_2 = 0
+
 lim_sup=0
 lim_inf=0
-
-
-
-intervalo1_1= int(input("Dime el primer número: \n"))
-intervalo1_2= int(input("Dime el segundo número: \n"))
-print(f"El intervalo es {intervalo1_1,intervalo1_2}")
 
 lim_inf= int(input("Dime el límite inferior del intervalo: \n"))
 lim_sup = int(input("Dime el límite superior del intervalo: \n"))
 
 while (lim_sup<lim_inf):
+    print("El intervalo superior es más pequeño que el inferior. El límite superior tiene que ser mayor que el inferior.")
+    print("")
     lim_inf= int(input("Dime el límite inferior del intervalo: \n"))
     lim_sup = int(input("Dime el límite superior del intervalo: \n"))
 
@@ -31,10 +26,9 @@ while (lim_sup<lim_inf):
 numLista = 0
 vNUm=[]
 
-
 while (numLista != 0):
     numLista= int(input("Dime el número: \n"))
 
-for num in range(intervalo1_1,intervalo1_2):
+for num in range(lim_inf+1,lim_sup):
     print(f"la suma de los números dentro del intervalo es: {num}")
-    vNUm.append(num)
+    
