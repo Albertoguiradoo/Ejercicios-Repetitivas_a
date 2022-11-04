@@ -6,8 +6,18 @@ utilizar el operador de potencia.
 
 base = 0
 exponente = 0
+try:
+    base = int(input("Dime la base: \n"))
+    exponente = int(input("Dime el exponente: \n"))
 
-base = int(input("Dime la base: \n"))
-exponente = int(input("Dime el exponente: \n"))
-
-print("")
+    if exponente==0:
+        print("1")  
+    resultado = 1
+    if exponente>0:
+        
+        for i in range(exponente):
+            resultado *= base  
+            
+    print(f"La potencia de {base} elevado a {exponente} es ={resultado}")
+except:
+    print("El programa soloa admite números. Por favor, intentelo de nuevo.")
