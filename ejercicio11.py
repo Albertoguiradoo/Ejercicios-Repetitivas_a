@@ -5,9 +5,17 @@ unidad. Nota: Es suficiente probar hasta la raíz cuadrada del número para ver 
 es divisible por algún otro número.
 '''
 
-num = 0
-num= int(input("Dime el númreo : \n"))
-if (num%2 == :
-
-
-
+primo = 0
+noPrimo =0
+num= 0
+try:
+    num = int(input("Dime un numero: \n"))
+    for i in range(2,num):
+        if num%i==0:
+            noPrimo +=  1 
+    if noPrimo >= 1:
+        print("El número no es primo")
+    else:
+        print("El número es primo")
+except:
+    print("El programa solo admite números. Por favor, intentelo de nuevo.")

@@ -20,4 +20,4 @@ try:
             
     print(f"La potencia de {base} elevado a {exponente} es ={resultado}")
 except:
-    print("El programa soloa admite números. Por favor, intentelo de nuevo.")
+    print("El programa solo admite números. Por favor, intentelo de nuevo.")
