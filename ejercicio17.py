@@ -12,16 +12,23 @@ día = 0
 dineroTotal= 0
 horasDía = 0
 contador= 0
-dinero = 0
 contador2= 0
+horasTotales = 0
+
 
 trabajadores= int(input("¿Cuántos trabajadores hay?: \n"))
 pagoHora= int(input("¿Cuánto paga por hora?: \n"))
-día= int(input("¿Cuánto dias trabajó esta semana?: \n"))
+
 
 for num in range(1,trabajadores+1):
     contador += 1
+    día= int(input(f"¿Cuánto dias trabajó esta semana el trabajador {contador} ?: \n"))
     for i in range(1,día+1):
-        
-        horasDía= int(input(f"Cuántas horas hizo el trabajador {contador} el día{}:\n "))
+        contador2+=1
+        horasDía= int(input(f"Cuántas horas hizo el trabajador {contador} en el día {contador2}:\n "))
+        horasTotales+= horasDía
+    dineroTotal = horasTotales*pagoHora
+    print(f"el sueldo del trabajador {contador} es de: {dineroTotal} $ ")
+
+
     
