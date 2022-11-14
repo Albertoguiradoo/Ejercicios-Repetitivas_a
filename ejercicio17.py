@@ -27,8 +27,12 @@ for num in range(1,trabajadores+1):
         contador2+=1
         horasDía= int(input(f"Cuántas horas hizo el trabajador {contador} en el día {contador2}:\n "))
         horasTotales+= horasDía
-    dineroTotal = horasTotales*pagoHora
+        dineroTotal = horasTotales*pagoHora
     print(f"el sueldo del trabajador {contador} es de: {dineroTotal} $ ")
+    contador2 = 0
+    dineroTotal = 0
+    horasTotales = 0
+    
 
 
     
